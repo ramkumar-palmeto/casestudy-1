@@ -1,0 +1,46 @@
+unique_name: northwind_sales_model
+object_type: model
+label: Northwind Sales
+description: This model describes Northwind Sales Schema for business users.
+metrics: []
+relationships:
+  - unique_name: orders_customerid_to_DimCustomers_customername
+    from:
+      dataset: orders
+      join_columns:
+        - customerid
+    to:
+      dimension: DimCustomers
+      level: customername
+  - unique_name: orders_employeeid_to_DimEmployees_employee_name
+    from:
+      dataset: orders
+      join_columns:
+        - employeeid
+    to:
+      dimension: DimEmployees
+      level: employee_name
+  - unique_name: orders_productid_to_DimProducts_productname
+    from:
+      dataset: orders
+      join_columns:
+        - productid
+    to:
+      dimension: DimProducts
+      level: productname
+  - unique_name: orders_rowid_to_DimShippers_shippername
+    from:
+      dataset: orders
+      join_columns:
+        - rowid
+    to:
+      dimension: DimShippers
+      level: shippername
+  - unique_name: orders_productid_to_DimSuppliers_suppliername
+    from:
+      dataset: orders
+      join_columns:
+        - productid
+    to:
+      dimension: DimSuppliers
+      level: suppliername
