@@ -2,7 +2,22 @@ unique_name: northwind_sales_model
 object_type: model
 label: Northwind Sales
 description: This model describes Northwind Sales Schema for business users.
-metrics: []
+dimensions:
+  - Shipped_Date
+  - Order_Date
+metrics:
+  - unique_name: m_orders_orderid_sum
+    folder: Order Metrics
+  - unique_name: m_orders_itemquantity_sum
+    folder: Order Metrics
+  - unique_name: m_orders_itemdiscount_sum
+    folder: Order Metrics
+  - unique_name: m_orders_itemamount_sum
+    folder: Order Metrics
+  - unique_name: m_orders_Tax Amount_sum
+    folder: Order Metrics
+  - unique_name: m_orders_Fulfillment Duration_sum
+    folder: Order Metrics
 relationships:
   - unique_name: orders_customerid_to_DimCustomers_customername
     from:

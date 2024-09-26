@@ -1,0 +1,7 @@
+unique_name: m_orders_itemquantity_sum
+object_type: metric
+label: Total Quantity
+calculation_method: sum
+column: itemquantity
+dataset: orders
+format: general number

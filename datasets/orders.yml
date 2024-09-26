@@ -32,5 +32,11 @@ columns:
     data_type: string
   - name: shippedcountry
     data_type: string
+  - name: Tax Amount
+    data_type: decimal
+    sql: itemdiscountedamount * 0.10
+  - name: Fulfillment Duration
+    data_type: int
+    sql: shippeddate - orderdate
 connection_id: con_CaseStudyDB_public
 table: vworders

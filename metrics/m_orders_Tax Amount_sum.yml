@@ -1,0 +1,6 @@
+unique_name: m_orders_Tax Amount_sum
+object_type: metric
+label: Tax Amount
+calculation_method: sum
+column: Tax Amount
+dataset: orders

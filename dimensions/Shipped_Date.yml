@@ -1,0 +1,18 @@
+unique_name: Shipped_Date
+object_type: dimension
+label: Shipped Date
+hierarchies:
+  - unique_name: Shipped_Date_Hierarchy
+    label: Shipped Date Hierarchy
+    levels:
+      - unique_name: Shipped_Date_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Shipped_Date_Level
+    label: Shipped Date Level
+    contains_unique_names: false
+    dataset: orders
+    key_columns:
+      - shippeddate
+    name_column: shippeddate
+type: standard
