@@ -23,7 +23,7 @@ columns:
   - name: itemamount
     data_type: int
   - name: itemdiscountedamount
-    data_type: numeric
+    data_type: float
   - name: shippername
     data_type: string
   - name: shippeddate
