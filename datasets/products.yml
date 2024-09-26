@@ -1,0 +1,22 @@
+unique_name: products
+object_type: dataset
+label: products
+columns:
+  - name: productid
+    data_type: int
+  - name: productname
+    data_type: string
+  - name: productprice
+    data_type: float
+  - name: productcategory
+    data_type: string
+  - name: suppliername
+    data_type: string
+  - name: suppliertype
+    data_type: string
+  - name: suppliercity
+    data_type: string
+  - name: suppliercountry
+    data_type: string
+connection_id: con_CaseStudyDB_public
+table: vwproducts

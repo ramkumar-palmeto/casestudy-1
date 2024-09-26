@@ -1,0 +1,36 @@
+unique_name: orders
+object_type: dataset
+label: orders
+columns:
+  - name: rowid
+    data_type: int
+  - name: orderid
+    data_type: int
+  - name: orderdate
+    data_type: date
+  - name: customerid
+    data_type: string
+  - name: employeeid
+    data_type: int
+  - name: productid
+    data_type: int
+  - name: itemquantity
+    data_type: int
+  - name: itemprice
+    data_type: float
+  - name: itemdiscount
+    data_type: float
+  - name: itemamount
+    data_type: int
+  - name: itemdiscountedamount
+    data_type: numeric
+  - name: shippername
+    data_type: string
+  - name: shippeddate
+    data_type: date
+  - name: shippedcity
+    data_type: string
+  - name: shippedcountry
+    data_type: string
+connection_id: con_CaseStudyDB_public
+table: vworders

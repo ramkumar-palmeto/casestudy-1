@@ -1,0 +1,46 @@
+unique_name: DimCustomers
+object_type: dimension
+label: Customers
+description: This dimension abstracts core customer attributes.
+hierarchies:
+  - unique_name: Customers
+    label: Customers
+    levels:
+      - unique_name: customercountry
+      - unique_name: customercity
+      - unique_name: customertype
+      - unique_name: customername
+level_attributes:
+  - unique_name: customercountry
+    label: Customer Country
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customercountry
+    name_column: customercountry
+  - unique_name: customercity
+    label: City
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customercity
+    name_column: customercity
+  - unique_name: customertype
+    label: Customer Type
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customertype
+    name_column: customertype
+  - unique_name: customername
+    label: Customer
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customerid
+    name_column: customername
+type: standard

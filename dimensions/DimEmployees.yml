@@ -1,0 +1,36 @@
+unique_name: DimEmployees
+object_type: dimension
+label: Employees
+hierarchies:
+  - unique_name: Employees
+    label: Employees
+    levels:
+      - unique_name: employee_country
+      - unique_name: employee_city
+      - unique_name: employee_name
+level_attributes:
+  - unique_name: employee_country
+    label: Country
+    contains_unique_names: false
+    dataset: employees
+    is_unique_key: false
+    key_columns:
+      - employee_country
+    name_column: employee_country
+  - unique_name: employee_city
+    label: City
+    contains_unique_names: false
+    dataset: employees
+    is_unique_key: false
+    key_columns:
+      - employee_city
+    name_column: employee_city
+  - unique_name: employee_name
+    label: Employee
+    contains_unique_names: false
+    dataset: employees
+    is_unique_key: false
+    key_columns:
+      - employee_id
+    name_column: employee_name
+type: standard

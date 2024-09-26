@@ -1,0 +1,27 @@
+unique_name: DimProducts
+object_type: dimension
+label: Products
+hierarchies:
+  - unique_name: Products
+    label: Products
+    levels:
+      - unique_name: productcategory
+      - unique_name: productname
+level_attributes:
+  - unique_name: productcategory
+    label: Category
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - productcategory
+    name_column: productcategory
+  - unique_name: productname
+    label: Product
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - productid
+    name_column: productname
+type: standard

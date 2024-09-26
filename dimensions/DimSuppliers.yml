@@ -1,0 +1,45 @@
+unique_name: DimSuppliers
+object_type: dimension
+label: Suppliers
+hierarchies:
+  - unique_name: Suppliers
+    label: Suppliers
+    levels:
+      - unique_name: suppliercountry
+      - unique_name: suppliercity
+      - unique_name: suppliertype
+      - unique_name: suppliername
+level_attributes:
+  - unique_name: suppliercountry
+    label: Country
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - suppliercountry
+    name_column: suppliercountry
+  - unique_name: suppliercity
+    label: City
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - suppliercity
+    name_column: suppliercity
+  - unique_name: suppliertype
+    label: Supplier Type
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - suppliertype
+    name_column: suppliertype
+  - unique_name: suppliername
+    label: Supplier
+    contains_unique_names: false
+    dataset: products
+    is_unique_key: false
+    key_columns:
+      - productid
+    name_column: suppliername
+type: standard

@@ -1,0 +1,6 @@
+unique_name: con_CaseStudyDB_public
+object_type: connection
+label: con_CaseStudyDB_public
+as_connection: CaseStudyDW
+database: CaseStudyDB
+schema: public

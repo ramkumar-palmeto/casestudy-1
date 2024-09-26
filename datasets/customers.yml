@@ -1,0 +1,16 @@
+unique_name: customers
+object_type: dataset
+label: customers
+columns:
+  - name: customerid
+    data_type: string
+  - name: customername
+    data_type: string
+  - name: customercity
+    data_type: string
+  - name: customercountry
+    data_type: string
+  - name: customertype
+    data_type: string
+connection_id: con_CaseStudyDB_public
+table: vwcustomers
